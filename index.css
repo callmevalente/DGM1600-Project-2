@@ -1,11 +1,12 @@
 *{
     margin: 0;
+    text-decoration: none;
 
 }
 
 #navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
@@ -13,18 +14,26 @@
     height: 60px;
 }
 
+.top-contact-menu {
+    margin-left: 1rem;
+    font-size: x-large;
+}
+
+.top-contact-menu > a {
+    margin-right: 5px;
+    color: #CAB4D9
+}
+
 .top-menu {
     display: flex;
     flex-direction: row;
     list-style: none;
     font-size: x-large;
-    text-decoration: none;
 }
 
 .top-menu > li > a {
     padding-right: 1rem;
-    text-decoration: none;
-    color: white
+    color: #CAB4D9
 }
 
 #welcome-section {
@@ -36,4 +45,104 @@
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
+    background-attachment: fixed;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #A62E5A;
+}
+
+#projects > h1 {
+    font-size: 4rem;
+    padding-top: 4rem;
+    color: #CAB4D9;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1900px;
+}
+
+.project-tile {
+    display: flex;
+    justify-content: center;
+    margin: 4rem;
+}
+
+.project-tile >figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-tile > figure > img {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+}
+
+.project-tile > figure > figcaption {
+    color: white;
+    font-size: xx-large;
+    padding-top: 1rem;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8E56A6;
+}
+
+#contact > h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 4rem;
+    width: 100%;
+    margin-top: 10rem;
+    padding-bottom: 1rem;
+}
+
+#contact > p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    width: 100%;
+    padding-bottom: 4rem;
+}
+
+.contact-menu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    list-style: none;
+    font-size: 3rem;
+    margin-bottom: 10rem;
+}
+
+.contact-menu > a {
+    color: white;
+
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9A3D5;
+    border-top: 4px solid black;
+    height: 4rem;
+}
+
+footer > p {
+    font-size: 2rem;
 }
