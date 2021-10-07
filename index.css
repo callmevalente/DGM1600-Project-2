@@ -1,7 +1,10 @@
 *{
     margin: 0;
+
 }
 header {
-    background-color: rgb(78, 34, 87);
+    display: flex;
+    justify-content: space-between;
+    background-color: #0487D9;
     margin: 0%;
 }
