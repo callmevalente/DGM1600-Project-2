@@ -2,9 +2,38 @@
     margin: 0;
 
 }
-header {
+
+#navbar {
     display: flex;
-    justify-content: space-between;
-    background-color: #0487D9;
-    margin: 0%;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: #262473;
+    height: 60px;
+}
+
+.top-menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+.top-menu > li > a {
+    padding-right: 1rem;
+    text-decoration: none;
+    color: white
+}
+
+#welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/welcome-image.png);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
 }
