@@ -1,6 +1,7 @@
 *{
     margin: 0;
     text-decoration: none;
+    font-family: 'Dosis', sans-serif;
 
 }
 
@@ -21,7 +22,11 @@
 
 .top-contact-menu > a {
     margin-right: 5px;
-    color: #CAB4D9
+    color: #CAB4D9;
+}
+
+#navbar > img {
+    height: 100%;
 }
 
 .top-menu {
@@ -29,15 +34,26 @@
     flex-direction: row;
     list-style: none;
     font-size: x-large;
+    padding: 0;
+    height: 100%;
 }
 
 .top-menu > li > a {
+    display: flex;
+    align-items: center;
     padding-right: 1rem;
+    padding-left: 1rem;
+    height: 100%;
     color: #CAB4D9
+}
+  
+.top-menu > li > a:hover {
+    background: #8E56A6;
 }
 
 #welcome-section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -48,17 +64,28 @@
     background-attachment: fixed;
 }
 
+#welcome-section > h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 15rem;
+}
+
+#welcome-section > p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 4rem;
+}
+
 #projects {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 3rem;
     background-color: #A62E5A;
 }
 
 #projects > h1 {
     font-size: 4rem;
-    padding-top: 4rem;
+    padding-bottom: 2rem;
     color: #CAB4D9;
 }
 
@@ -73,7 +100,7 @@
 .project-tile {
     display: flex;
     justify-content: center;
-    margin: 4rem;
+    margin: 2rem;
 }
 
 .project-tile >figure {
@@ -89,9 +116,14 @@
 }
 
 .project-tile > figure > figcaption {
+    display: flex;
+    justify-content: center;
     color: white;
     font-size: xx-large;
     padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    background-color: rgba(3, 3, 3, 0.5);
 }
 
 #contact {
@@ -99,22 +131,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
     background-color: #8E56A6;
 }
 
 #contact > h1 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     color: white;
     font-size: 4rem;
     width: 100%;
-    margin-top: 10rem;
     padding-bottom: 1rem;
 }
 
 #contact > p {
     display: flex;
     justify-content: center;
+    text-align: center;
     color: white;
     font-size: 2rem;
     width: 100%;
@@ -123,26 +161,34 @@
 
 .contact-menu {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     width: 80%;
     list-style: none;
     font-size: 3rem;
-    margin-bottom: 10rem;
 }
 
 .contact-menu > a {
     color: white;
-
+    text-align: center;
+    margin: 1rem;
+    transition: transform 0.3s ease-out;
 }
+
+.contact-menu > a:hover {
+    transform: translateY(-8px);
+}
+
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #D9A3D5;
     border-top: 4px solid black;
-    height: 4rem;
 }
 
 footer > p {
+    text-align: center;
     font-size: 2rem;
+    padding: 1rem;
 }
