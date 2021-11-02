@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "starwars";
+    src: url(fonts/SfDistantGalaxyItalic-WV3Y.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+body {
+    background-image: url(images/hyperspace_background.gif);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+header > h1 {
+    font-family: starwars, sans-serif;
+    font-size: 6rem;
+    letter-spacing: 8px;
+    color: #F2CF1D;
+    -webkit-text-stroke: 2px black;
+}
+
+header > h2 {
+    font-family: starwars, sans-serif;
+    font-size: 6rem;
+    color: #F2CF1D;
+    -webkit-text-stroke: 2px black;
+}
+
+header > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 4rem;
+}
+
+.menu-item > figure > img {
+    width: 500px;
+    height: 500px;
+}
+
+.menu-item > figure > figcaption {
+    font-family: starwars, serif;
+    font-size: xx-large;
+    text-align: center;
+    color: black;
+    -webkit-text-stroke: 2px #F2CF1D;
+}
+
+footer {
+    text-align: center;
+    font-size: xx-large;
+    -webkit-text-stroke: .5px black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
+    background-color: rgba(0,0,0,.5)
+}
