@@ -14,11 +14,11 @@ body {
     background-image: url(images/hyperspace_background.gif);
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 }
 
 header {
     text-align: center;
-    margin-bottom: 6rem;
 }
 
 header > h1 {
@@ -46,14 +46,16 @@ header > p {
 .menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: space-evenly;
+    align-items: center;
     margin: 0 4rem;
 }
+
 
 .menu-item > figure > img {
     width: 500px;
     height: 500px;
+    margin-top: 6rem;
 }
 
 .menu-item > figure > figcaption {
@@ -65,13 +67,14 @@ header > p {
 }
 
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: xx-large;
     -webkit-text-stroke: .5px black;
     color: white;
-    position: absolute;
-    bottom: 0;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
     width: 100%;
-    height: 2.5rem; 
-    background-color: rgba(0,0,0,.5)
 }
