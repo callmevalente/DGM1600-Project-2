@@ -11,6 +11,9 @@
   }
 
 body {
+    display:flex; 
+    flex-direction:column; 
+    height:100vh;
     background-image: url(../images/chamber-background.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -20,6 +23,7 @@ body {
 header {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 2rem;
     margin-bottom: 4rem;
 }
@@ -36,6 +40,17 @@ header {
     letter-spacing: 8px;
 }
 
+@media (max-width: 550px) {
+    .title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .title {
+        font-size: 1.5rem;
+    }
+}
 
 button {
     font-family: 'Red Hat Mono', monospace;
@@ -43,6 +58,7 @@ button {
     color: white;
     border-radius: 15px;
     background-color: black;
+    margin-bottom: 1rem;
 }
 
 button:hover {
@@ -56,11 +72,13 @@ button:hover {
     justify-content: center;
 }
 
+
 figure {
     margin: 4px;
 }
 
 figure img {
+    display: flex;
     width: 200px;
     border-radius: 50%;
     background-color: rgb(51, 46, 46);
@@ -81,4 +99,5 @@ footer {
     color: white;
     text-align: center;
     padding-bottom: 1rem;
+    margin-top: auto; 
 }

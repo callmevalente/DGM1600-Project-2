@@ -23,7 +23,14 @@ header {
     color: #F2CF1D;
     margin-top: 3rem;
 }
-  
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 img {
   padding: 10px;
   background-color: #F2CF1D;
