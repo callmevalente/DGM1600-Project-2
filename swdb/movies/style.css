@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "starwars";
+  src: url(../fonts/SfDistantGalaxyItalic-WV3Y.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+
+body {
+  background-color: black;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+}
+  
+header {
+    text-align: center;
+    font-family: "starwars";
+    font-size: 4rem;
+    color: #F2CF1D;
+    margin-top: 3rem;
+}
+  
+img {
+  padding: 10px;
+  background-color: #F2CF1D;
+  border-radius: 10%;
+  width: 100%;
+  margin: 0;
+}
+  
+figcaption {
+  text-align: center;
+  font-size: xx-large;
+  padding-bottom: .5em;
+  color: white;
+}
+
+footer {
+  font-family: 'Red Hat Mono', monospace;
+  font-size: xx-large;
+  color: white;
+  text-align: center;
+  padding-bottom: 1rem;
+}

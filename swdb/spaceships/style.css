@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "starwars";
+    src: url(../fonts/SfDistantGalaxyItalic-WV3Y.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+body {
+    background-image: url(../images/hyperspace_background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+}
+  
+header > h1 {
+    font-family: starwars, sans-serif;
+    font-size: 6rem;
+    color: #F2CF1D;
+}
+
+.navviewer {
+    padding: 0.5rem;
+    background-color: #F2CF1D;
+}
+  
+.nav {
+    font-size: large;
+    background-color: #F2CF1D;
+    border-radius: 30px;
+    padding: 0.5rem;
+    margin-right: 2em;
+}
+
+.navList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+    background-color: black;
+    border-radius: 30px;
+    height: 100%;
+}
+
+#viewer {
+    display: flex;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
+}
+
+section > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 0.5rem;
+    background-color: #F2CF1D;
+}
+
+.box {
+    background-color: black;
+    border-style: solid;
+    border-color: yellow;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+}
+
+footer {
+    font-family: 'Red Hat Mono', monospace;
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+    padding-bottom: 1rem;
+}
