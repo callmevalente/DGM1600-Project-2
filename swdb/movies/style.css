@@ -47,9 +47,9 @@ figcaption {
 }
 
 footer {
-  font-family: 'Red Hat Mono', monospace;
+  font-family: monospace;
   font-size: xx-large;
   color: white;
   text-align: center;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
