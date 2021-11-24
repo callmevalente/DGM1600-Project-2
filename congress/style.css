@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #BFA58E;
+}
+
 navbar {
     display: flex;
     justify-content: space-between;
@@ -26,13 +30,10 @@ navbar {
     padding-bottom: 1rem;
 }
 
-.nav-buttons {
+.buttons {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-}
-
-.nav-buttons > button {
-    margin-left: 1rem;
 }
 
 .button {
@@ -41,12 +42,30 @@ navbar {
     height: 50px;
 }
 
+.is-link {
+    width: 100px;
+}
+
+.is-success {
+    width: 150px;
+}
+
+.is-danger {
+    width: 150px;
+}
+
+.is-info {
+    width: 150px;
+}
+
 .summary {
     display: flex;
+    justify-content: space-evenly;
     font-family: 'Graduate', cursive;
     background-color: #8C111B;
     color: white;
     padding: 1rem;
+    width: 100%;
 }
 
 .most {
@@ -64,10 +83,34 @@ navbar {
     padding-top: 1rem;
 }
 
+.least {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #400F13;
+    text-align: center;
+    font-size: x-large;
+}
+
+.leastLoyal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leastLoyal > figure {
+    width: 280px;
+}
+
+.leastLoyal > figure > figcaption {
+    text-align: center;
+    font-size: x-large;
+}
+
 .members {
     display: flex;
     flex-wrap: wrap;
-    background-color: #BFA58E;
 }
 
 .seniority {
@@ -84,16 +127,29 @@ navbar {
 }
 
 .seniority > figure {
-    width: 300px;
+    width: 280px;
+}
+
+.seniority > figure > figcaption {
+    text-align: center;
+    font-size: x-large;
+}
+
+.members {
+    display: flex;
+    justify-content: center;
 }
 
 .members > figure {
     width: 160px;
     display: flex;
     flex-direction: column;
-    margin: 1em;
+    margin: 1rem;
+    text-align: center;
+    font-family: 'Graduate', cursive;
 }
 
-.members > figcaption {
+footer {
+    font-size: xx-large;
     text-align: center;
 }
