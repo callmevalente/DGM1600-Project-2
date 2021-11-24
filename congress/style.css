@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #254159;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Graduate', cursive;
+    font-size: 110px;
+    color: white;
+}
+
+.logo > img {
+    width: 100px;
+    margin-right: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-buttons > button {
+    margin-left: 1rem;
+}
+
+.button {
+    font-size: x-large;
+    width: 200px;
+    height: 50px;
+}
+
+.summary {
+    display: flex;
+    font-family: 'Graduate', cursive;
+    background-color: #8C111B;
+    color: white;
+    padding: 1rem;
+}
+
+.most {
+    padding: 1rem;
+    background-color: #400F13;
+}
+
+.most > h2 {
+    font-size: x-large;
+}
+
+.mostLoyal {
+    display: flex;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #BFA58E;
+}
+
+.seniority {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #400F13;
+}
+
+.seniority > h1 {
+    font-size: x-large;
+}
+
+.seniority > figure {
+    width: 300px;
+}
+
+.members > figure {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.members > figcaption {
+    text-align: center;
+}
