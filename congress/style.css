@@ -42,12 +42,16 @@ navbar {
     height: 50px;
 }
 
-.is-link {
+.is-dark {
     width: 100px;
 }
 
-.is-success {
+.sen {
     width: 150px;
+}
+
+.repr {
+    width: 200px;
 }
 
 .is-danger {
