@@ -5,23 +5,156 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link href="style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-    <title>Pokedex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>Pokédex</title>
 </head>
 
 <body>
     <header>
+        <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <img id='pokeballHeader' src="images/pokesprite.png" width="70" height="56">
+                <h1>WELCOME TO YOUR POKÉDEX!</h1>
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">
+                    <a class="button is-primary loadPokemon">
+                      <strong>Reset View</strong>
+                    </a>
+                    <a class="button is-success showAll">
+                      Show all Pokemon
+                    </a>
+                    <a class="button is-danger newPokemon">
+                      Create your own Pokemon!
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
         <img src="images/head.png"></img>
-        <div class="menuButtons">
-            <button class="loadPokemon">Load Pokemon</button>
-            <button class="newPokemon">Create your Pokemon!</button>
-            <button class="morePokemon">Load more Pokemon</button>
         </div>
+        <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <div class="field">
+                    <label class="label">What is the name of your new Pokemon?</label>
+                    <div class="control">
+                      <input class="input" id="theName" type="text" placeholder="e.g Thoremon">
+                    </div>
+                  </div>
+                  
+                  <div class="field">
+                    <label class="label">What are your Pokemon type(s)? (if multiple, use a comma separated list)</label>
+                    <div class="control">
+                      <input class="input" id="theType" type="text" placeholder="e.g. grass, normal">
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label class="label">What is the height of your Pokemon?</label>
+                    <div class="control">
+                      <input class="input" id="theHeight" type="text" placeholder="e.g. 12">
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label class="label">What us the weight of your pokemon?</label>
+                    <div class="control">
+                      <input class="input" id="theWeight" type="text" placeholder="e.g. 300">
+                    </div>
+                  </div>
+                  <div class="formBottom">
+                    <button class="button is-danger create">Create!</button>
+                    <p id="bottomFormText">Your new pokemon will appear in the end of the page.</p>
+                  </div>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+          </div>
     </header>
     <main>
+        <div class="lowerMenu">
+            <div class="searchPokemon">
+                <div class="field has-addons">
+                    <div class="control">
+                      <input class="input pokeSearch" id="entPoke" type="text" placeholder="Search Pokemon by name or ID:">
+                    </div>
+                    <div class="control">
+                      <a class="button is-primary pokeSearchEx">
+                        Search
+                      </a>
+                    </div>
+                  </div>
+                  <p class="help">Result will appear in the end of the page.</p>
+            </div>
+            <div class="subLowerMenu">
+                <div class="callPokemon">
+                    <div class='howMany'>
+                        <div class="field howManyBox">
+                            <label class="label">Initial Pokemon ID:</label>
+                            <div class="control">
+                            <input class="input howManyIn" id="iniId" type="text" placeholder="Between 1 and 898 / 10001 and 10220">
+                            </div>
+                        </div>
+                        
+                        <div class="field howManyBox">
+                            <label class="label">How many pokemon do you wish to display?</label>
+                            <div class="control">
+                            <input class="input howManyIn" id="pokeRange" type="text" placeholder="Enter a value">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <button class="button is-primary pokeFetch">Catch em' All!</button>
+                    </div>
+                </div>
+                <div class="filterPokemon">
+                    <label class="label">Filter pokemon by type: </label>
+                    <div class="filterPokemonFunc">
+                      <div class="control">
+                        <div class="select">
+                          <select id='pokeTypeFilter'>
+                            <option>--Select--</option>
+                            <option>Normal</option>
+                            <option>Fire</option>
+                            <option>Water</option>
+                            <option>Electric</option>
+                            <option>Grass</option>
+                            <option>Ice</option>
+                            <option>Fighting</option>
+                            <option>Poison</option>
+                            <option>Ground</option>
+                            <option>Flying</option>
+                            <option>Psychic</option>
+                            <option>Bug</option>
+                            <option>Rock</option>
+                            <option>Ghost</option>
+                            <option>Dragon</option>
+                            <option>Dark</option>
+                            <option>Steel</option>
+                            <option>Fairy</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="control">
+                        <button class="button is-primary filterButton">Filter</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="pokeGrid"></div>
     </main>
     <footer></footer>

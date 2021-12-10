@@ -3,13 +3,12 @@
     box-sizing: border-box;
 }
 
-body {
+html {
     background-image: url(images/pokeground.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
 }
 
 header {
@@ -22,6 +21,112 @@ header > img {
     width: 450px;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+}
+
+.navbar-brand > h1 {
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+}
+
+.formBottom {
+    display: flex;
+    align-items: center;
+    font-size: small;
+}
+
+#bottomFormText {
+    padding-left: 1rem;
+    color: white;
+}
+
+.label {
+    color: white;
+}
+
+.lowerMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.subLowerMenu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.searchPokemon {
+    margin-bottom: 1rem;
+}
+
+.pokeSearch {
+    width: 300px;
+}
+
+.callPokemon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(32, 31, 31, 0.5);
+    width: 750px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.checkbox {
+    color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.howMany {
+    display: flex;
+}
+
+.howManyBox {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.howManyIn {
+    width: 300px
+}
+
+.filterPokemon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(32, 31, 31, 0.5);
+    width: 750px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.filterPokemon > label {
+    font-size: large;
+}
+
+.filterPokemonFunc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filterButton {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    position: relative; 
+    top: -8px;
 }
 
 .pokeGrid {
@@ -41,6 +146,7 @@ header > img {
 .card {
     width: 100%;
     height: 100%;
+    border-radius: 20px;
     transition: transform 1s;
     transform-style: preserve-3d;
     cursor: pointer;
@@ -61,16 +167,16 @@ header > img {
     backface-visibility: hidden;
 }
 
-.front {
+.cFront {
     background: #2a75bb;
 }
 
-.back {
+.cBack {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #c7a008;
+    background: #595857;
     transform: rotateY(180deg);
 }
 
@@ -80,6 +186,10 @@ header > img {
 
 .stats {
     padding-left: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 0.9em;
+    line-height: 130%;
+    color: black;
 }
 
 figure img {
@@ -87,20 +197,15 @@ figure img {
 }
 
 figcaption {
+    color: black;
     text-align: center;
     font-size: 1.3rem;
     padding-top: 0.5rem;
-    padding-bottom: 1rem;
 }
 
-figcaption::first-letter {
+.cardFace > figcaption::first-letter {
     text-transform: capitalize;
     font-size: 150%;
-}
-
-li {
-    position: relative;
-    right: 1rem;
 }
 
 li::first-letter {
