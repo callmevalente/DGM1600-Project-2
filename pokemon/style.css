@@ -154,9 +154,7 @@ nav {
 }
 
 .card.is-flipped {
-    position: fixed;
     transform: rotateY(180deg);
-    background-color: rgba(32, 31, 31, 0);
 }
 
 .cardFace {
@@ -175,6 +173,7 @@ nav {
 
 .cBack {
     display: flex;
+    position: fixed;
     flex-direction: column;
     justify-content: center;
     align-items: center;
