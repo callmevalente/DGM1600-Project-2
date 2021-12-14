@@ -154,11 +154,12 @@ nav {
 }
 
 .card.is-flipped {
+    position: fixed;
     transform: rotateY(180deg);
 }
 
 .cardFace {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 20px;
