@@ -170,6 +170,10 @@
     background-color: #A62E5A;
 }
 
+.project-tile:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 #projects > h1 {
     text-align: center;
     font-size: 4rem;
