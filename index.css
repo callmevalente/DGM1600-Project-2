@@ -170,6 +170,10 @@
     background-color: #A62E5A;
 }
 
+.project-tile:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 #projects > h1 {
     text-align: center;
     font-size: 4rem;
@@ -192,7 +196,7 @@
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
-.project-tile >figure {
+.project-tile > figure {
     display: flex;
     flex-direction: column;
     align-items: center;
