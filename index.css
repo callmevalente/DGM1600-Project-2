@@ -2,7 +2,7 @@
     margin: 0;
     text-decoration: none;
     font-family: 'Dosis', sans-serif;
-
+    scroll-behavior: smooth;
 }
 
 #navbar {
@@ -57,6 +57,10 @@
     .top-contact-menu {
         display: none;
     }
+}
+
+section {
+    border-bottom: solid;
 }
 
 #welcome-section {
@@ -161,6 +165,86 @@
     }
 }
 
+#about-me {
+    background-color: #A62E5A;
+    padding: 50px;
+}
+
+#about-me > h1 {
+    font-size: 4rem;
+    color: #CAB4D9;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.aboutBody {
+    display: flex;
+}
+
+.aboutBody > img {
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    margin-left: 50px;
+    border-left: solid black;
+}
+
+.aboutText > p {
+    font-size: 2.5rem;
+    padding-left: 3rem;
+}
+
+#skills {
+    background-color: #8E56A6;
+    padding: 50px;
+}
+
+#skills > h1 {
+    font-size: 4rem;
+    color: #CAB4D9;
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-bottom: 30px;
+}
+
+.theSkills > h2 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.skillLane {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-bottom: 6rem;
+}
+
+.skillLane2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.skillIcon {
+    width: 200px;
+    height: 200px;
+}
+
+.skillText {
+    text-align: center;
+    font-size: x-large;
+    padding-top: 10px;
+    color: white;
+}
+
 #projects {
     display: flex;
     flex-direction: column;
@@ -216,6 +300,18 @@
     color: white;
     font-size: xx-large;
     padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    background-color: rgba(3, 3, 3, 0.5);
+}
+
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: large;
     padding-bottom: 1rem;
     width: 100%;
     background-color: rgba(3, 3, 3, 0.5);
@@ -305,7 +401,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #D9A3D5;
-    border-top: 4px solid black;
+    border-top: 3px solid black;
 }
 
 footer > p {
