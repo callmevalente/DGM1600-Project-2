@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: "starwars";
-    src: url(fonts/SfDistantGalaxyItalic-WV3Y.ttf);
+    src: url(../fonts/SfDistantGalaxyItalic-WV3Y.ttf);
     font-style: normal;
     font-weight: 100;
 }
@@ -13,8 +13,8 @@
 body {
     display: flex;
     flex-direction: column;
-    height:100vh;
-    background-image: url(images/hyperspace_background.gif);
+    height: 100vh;
+    background-image: url(../images/hyperspace_background.gif);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -27,7 +27,7 @@ header {
     margin-top: 2rem;
 }
 
-header > h1 {
+header>h1 {
     font-family: starwars, sans-serif;
     font-size: 6rem;
     letter-spacing: 8px;
@@ -35,14 +35,14 @@ header > h1 {
     -webkit-text-stroke: 2px black;
 }
 
-header > h2 {
+header>h2 {
     font-family: starwars, sans-serif;
     font-size: 6rem;
     color: #F2CF1D;
     -webkit-text-stroke: 2px black;
 }
 
-header > p {
+header>p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: xx-large;
     color: white;
@@ -50,29 +50,29 @@ header > p {
 }
 
 @media (max-width: 600px) {
-    header > h1 {
+    header>h1 {
         font-size: 5.5rem;
     }
-    
-    header > h2 {
+
+    header>h2 {
         font-size: 5.5rem;
     }
-    
-    header > p {
+
+    header>p {
         font-size: x-large;
     }
 }
 
 @media (max-width: 550px) {
-    header > h1 {
+    header>h1 {
         font-size: 5rem;
     }
-    
-    header > h2 {
+
+    header>h2 {
         font-size: 5rem;
     }
-    
-    header > p {
+
+    header>p {
         font-size: x-large;
     }
 }
@@ -86,13 +86,13 @@ header > p {
 }
 
 
-.menu-item > figure > img {
+.menu-item>figure>img {
     width: 500px;
     height: 500px;
     margin-top: 4rem;
 }
 
-.menu-item > figure > figcaption {
+.menu-item>figure>figcaption {
     font-family: starwars, serif;
     font-size: xx-large;
     text-align: center;
@@ -101,19 +101,19 @@ header > p {
 }
 
 @media (max-width: 500px) {
-    header > h1 {
+    header>h1 {
         font-size: 4.5rem;
     }
-    
-    header > h2 {
+
+    header>h2 {
         font-size: 4.5rem;
     }
-    
-    header > p {
+
+    header>p {
         font-size: x-large;
     }
 
-    .menu-item > figure > img {
+    .menu-item>figure>img {
         width: 450px;
         height: 450px;
         margin-top: 6rem;
@@ -121,19 +121,19 @@ header > p {
 }
 
 @media (max-width: 450px) {
-    header > h1 {
+    header>h1 {
         font-size: 3.5rem;
     }
-    
-    header > h2 {
+
+    header>h2 {
         font-size: 3.5rem;
     }
-    
-    header > p {
+
+    header>p {
         font-size: x-large;
     }
 
-    .menu-item > figure > img {
+    .menu-item>figure>img {
         width: 350px;
         height: 350px;
         margin-top: 6rem;
@@ -141,19 +141,19 @@ header > p {
 }
 
 @media (max-width: 350px) {
-    header > h1 {
+    header>h1 {
         font-size: 3rem;
     }
-    
-    header > h2 {
+
+    header>h2 {
         font-size: 3rem;
     }
-    
-    header > p {
+
+    header>p {
         font-size: x-large;
     }
 
-    .menu-item > figure > img {
+    .menu-item>figure>img {
         width: 300px;
         height: 300px;
         margin-top: 6rem;
@@ -161,19 +161,19 @@ header > p {
 }
 
 @media (max-width: 300px) {
-    header > h1 {
+    header>h1 {
         font-size: 2.5rem;
     }
-    
-    header > h2 {
+
+    header>h2 {
         font-size: 2.5rem;
     }
-    
-    header > p {
+
+    header>p {
         font-size: x-large;
     }
 
-    .menu-item > figure > img {
+    .menu-item>figure>img {
         width: 250px;
         height: 250px;
         margin-top: 6rem;
@@ -186,7 +186,7 @@ footer {
     text-align: center;
     align-self: center;
     width: 100%;
-    margin-top: auto; 
+    margin-top: auto;
     margin-bottom: 1rem;
     font-family: monospace;
     font-size: xx-large;

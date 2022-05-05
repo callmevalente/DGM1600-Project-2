@@ -1,5 +1,5 @@
-import { starships } from "../data/starships.js"
-import { getLastNumber, removeChildren } from '../tools/index.js'
+import { starships } from "../../data/starships.js"
+import { getLastNumber, removeChildren } from '../../tools/index.js'
 
 const nav = document.querySelector('.nav')
 const navList = document.querySelector('.navList')
@@ -18,7 +18,7 @@ function populateNav(spaceships) {
   spaceships.forEach(starship => {
     let anchorWrap = document.createElement('a')
     anchorWrap.href = '#'
-    let listItem  = document.createElement('li')
+    let listItem = document.createElement('li')
     listItem.textContent = starship.name
     anchorWrap.addEventListener('click', () => {
       populateShipView(starship)

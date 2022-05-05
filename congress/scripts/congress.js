@@ -1,6 +1,6 @@
-import { senators } from '../data/senators.js'
-import { representatives } from '../data/representatives.js'
-import { removeChildren } from '../swdb/tools/index.js'
+import { senators } from '../../data/senators.js'
+import { representatives } from '../../data/representatives.js'
+import { removeChildren } from '../../swdb/tools/index.js'
 
 const members = [...senators, ...representatives]
 

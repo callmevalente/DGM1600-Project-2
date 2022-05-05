@@ -1,6 +1,6 @@
 @font-face {
   font-family: "starwars";
-  src: url(../fonts/SfDistantGalaxyItalic-WV3Y.ttf);
+  src: url(../../fonts/SfDistantGalaxyItalic-WV3Y.ttf);
   font-style: normal;
   font-weight: 100;
 }
@@ -10,18 +10,18 @@ body {
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
 }
-  
+
 header {
-    text-align: center;
-    font-family: "starwars";
-    font-size: 4rem;
-    color: #F2CF1D;
-    margin-top: 3rem;
+  text-align: center;
+  font-family: "starwars";
+  font-size: 4rem;
+  color: #F2CF1D;
+  margin-top: 3rem;
 }
 
 figure {
@@ -38,7 +38,7 @@ img {
   width: 100%;
   margin: 0;
 }
-  
+
 figcaption {
   text-align: center;
   font-size: xx-large;

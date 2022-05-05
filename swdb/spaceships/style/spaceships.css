@@ -5,13 +5,13 @@
 
 @font-face {
     font-family: "starwars";
-    src: url(../fonts/SfDistantGalaxyItalic-WV3Y.ttf);
+    src: url(../../fonts/SfDistantGalaxyItalic-WV3Y.ttf);
     font-style: normal;
     font-weight: 100;
 }
 
 body {
-    background-image: url(../images/hyperspace_background.jpg);
+    background-image: url(../../images/hyperspace_background.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -21,8 +21,8 @@ header {
     text-align: center;
     width: 100%;
 }
-  
-header > h1 {
+
+header>h1 {
     font-family: starwars, sans-serif;
     font-size: 6rem;
     color: #F2CF1D;
@@ -32,7 +32,7 @@ header > h1 {
     padding: 0.5rem;
     background-color: #F2CF1D;
 }
-  
+
 .nav {
     font-size: large;
     background-color: #F2CF1D;
@@ -66,13 +66,13 @@ section {
     border-radius: 20px;
 }
 
-section > img {
+section>img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
     padding: 0.5rem;
     background-color: #F2CF1D;
-    object-fit:fill;
+    object-fit: fill;
 }
 
 .box {

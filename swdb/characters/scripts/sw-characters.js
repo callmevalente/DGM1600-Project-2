@@ -1,5 +1,5 @@
-import { people } from "../data/people.js"
-import { getLastNumber, removeChildren } from "../tools/index.js"
+import { people } from "../../data/people.js"
+import { getLastNumber, removeChildren } from "../../tools/index.js"
 
 const mainContent = document.querySelector('#main')
 
@@ -8,7 +8,7 @@ const femaleCharacters = people.filter((person) => person.gender === 'female')
 const otherCharacters = people.filter((person) => {
   if (
     person.gender !== 'male' &&
-    person.gender !== 'female' 
+    person.gender !== 'female'
   ) {
     return person
   }

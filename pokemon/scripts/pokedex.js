@@ -1,4 +1,4 @@
-import { removeChildren } from '../swdb/tools/index.js'
+import { removeChildren } from '../../swdb/tools/index.js'
 
 const showAll = document.querySelector('.showAll')
 
@@ -10,7 +10,7 @@ showAll.addEventListener('click', () => {
 const modal = document.querySelector('.modal')
 const closeButton = document.querySelector('.modal-close')
 const modalBackground = document.querySelector('.modal-background')
-const createButton = document.querySelector ('.create')
+const createButton = document.querySelector('.create')
 
 modalBackground.addEventListener('click', () => modal.classList.toggle('is-active'))
 closeButton.addEventListener('click', () => modal.classList.toggle('is-active'))
@@ -45,7 +45,8 @@ loadButton.addEventListener('click', () => {
 })
 const newButton = document.querySelector('.newPokemon')
 newButton.addEventListener('click', () => {
-    modal.classList.toggle('is-active')})
+    modal.classList.toggle('is-active')
+})
 
 createButton.addEventListener('click', () => {
     let pokeName = document.querySelector('#theName').value
@@ -103,30 +104,30 @@ function getPokemonById(serId) {
 function getTypesArray(commaString) {
     let tempArray = commaString.split(',')
     return tempArray.map((typeName) => {
-      return {
-        typeName,
-      }
+        return {
+            typeName,
+        }
     })
 }
 
 async function getAllSimplePokemon() {
     const allPokemon = []
     await getAPIData(
-      `https://pokeapi.co/api/v2/pokemon?limit=1118&offset=0`,
+        `https://pokeapi.co/api/v2/pokemon?limit=1118&offset=0`,
     ).then(async (data) => {
-      for (const pokemon of data.results) {
-        await getAPIData(pokemon.url).then((pokeData) => {
-          const mappedPokemon = {
-            abilities: pokeData.abilities,
-            height: pokeData.height,
-            id: pokeData.id,
-            name: pokeData.name,
-            types: pokeData.types,
-            weight: pokeData.weight,
-          }
-          allPokemon.push(mappedPokemon)
-        })
-      }
+        for (const pokemon of data.results) {
+            await getAPIData(pokemon.url).then((pokeData) => {
+                const mappedPokemon = {
+                    abilities: pokeData.abilities,
+                    height: pokeData.height,
+                    id: pokeData.id,
+                    name: pokeData.name,
+                    types: pokeData.types,
+                    weight: pokeData.weight,
+                }
+                allPokemon.push(mappedPokemon)
+            })
+        }
     })
     return allPokemon
 }
@@ -212,11 +213,11 @@ function populateCardBack(pokemon) {
     typeLabel.textContent = 'Type(s):'
     const pokeTypes = document.createElement('ul')
     if (pokemon.id === 9001) {
-        for (var i = 0; i < pokemon.types.length; i++){
+        for (var i = 0; i < pokemon.types.length; i++) {
             let typeItem = document.createElement('li')
             typeItem.textContent = pokemon.types[i].typeName
             pokeTypes.appendChild(typeItem)
-            }
+        }
     } else {
         pokemon.types.forEach((pokeType) => {
             let typeItem = document.createElement('li')
@@ -240,7 +241,7 @@ function populateCardBack(pokemon) {
 
 class Pokemon {
     constructor(name, height, weight, types, id = 9001) {
-        ;   (this.id = id),
+        ; (this.id = id),
             (this.name = name),
             (this.height = height),
             (this.weight = weight),
